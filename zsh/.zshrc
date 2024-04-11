@@ -19,5 +19,22 @@ setopt correctall
 setopt autocd
 setopt extendedglob
 
+# Exports
+export EDITOR=nvim
+
+# Aliases
+alias ls="eza --icons=always"
+alias la="eza --icons=always -a"
+alias ll="eza --icons=always --group-directories-first --long -a"
+
+# Keybinds
+bindkey '^[[1;5D' backward-word
+bindkey '^[[1;5C' forward-word
+bindkey '^ ' autosuggest-accept
+bindkey '^[[3~' delete-char
+
+
+# Evals
+eval "$(starship init zsh)"
 source /usr/share/zsh/site-functions/zsh-autosuggestions.zsh
 source /usr/share/zsh/site-functions/zsh-syntax-highlighting.zsh
