@@ -7,8 +7,11 @@ try {
     '--outdir', outdir,
     '--external', 'resource://*',
     '--external', 'gi://*',
+    '--target', 'browser'
   ]);
   await import(`file://${outdir}/main.js`);
 } catch (error) {
   console.error(error);
 }
+
+export {};
