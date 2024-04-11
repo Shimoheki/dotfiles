@@ -33,6 +33,8 @@ bindkey '^[[1;5C' forward-word
 bindkey '^ ' autosuggest-accept
 bindkey '^[[3~' delete-char
 
+# Exports
+export PATH="~/.bun/bin:$PATH}"
 
 # Evals
 eval "$(starship init zsh)"
