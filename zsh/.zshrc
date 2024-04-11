@@ -34,7 +34,8 @@ bindkey '^ ' autosuggest-accept
 bindkey '^[[3~' delete-char
 
 # Exports
-export PATH="~/.bun/bin:$PATH}"
+export BUN_PATH="$HOME/.bun/bin"
+export PATH="$BUN_PATH:$PATH"
 
 # Evals
 eval "$(starship init zsh)"
