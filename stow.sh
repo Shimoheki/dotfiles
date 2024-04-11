@@ -1,1 +1,1 @@
-stow zsh ~/
+stow zsh -t ~/
