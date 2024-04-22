@@ -14,7 +14,7 @@ zstyle ':completion:*:warnings' format '%BSorry, no matches for: %d%b'
 compinit
 
 # Correction
-setopt correctall
+#setopt correctall
 
 setopt autocd
 setopt extendedglob
@@ -33,11 +33,16 @@ bindkey '^[[1;5C' forward-word
 bindkey '^ ' autosuggest-accept
 bindkey '^[[3~' delete-char
 
+source /etc/profile
+
 # Exports
 export BUN_PATH="$HOME/.bun/bin"
-export PATH="$BUN_PATH:$PATH"
+export RUST_PATH="$HOME/.cargo/bin"
+export PATH="$BUN_PATH:$RUST_PATH:$PATH"
 
 # Evals
 eval "$(starship init zsh)"
+eval "$(luarocks path)"
+source "$HOME/.cargo/env"
 source /usr/share/zsh/site-functions/zsh-autosuggestions.zsh
 source /usr/share/zsh/site-functions/zsh-syntax-highlighting.zsh
