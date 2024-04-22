@@ -39,7 +39,7 @@ return {
         ["jsonrc"] = { "biome" },
         ["yaml"] = { "biome" },
         ["html"] = { "biome" },
-        ["css"] = { "biome" },
+        -- ["css"] = { "biome" },
       },
     },
   },
