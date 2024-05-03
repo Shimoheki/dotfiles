@@ -138,7 +138,7 @@ const End = () =>
 		children: [Volume(), SysTray(), Clock()],
 	});
 
-export const Bar = (monitor: number) =>
+export const Bar = (monitor = 0) =>
 	Widget.Window({
 		name: `bar-${monitor}`,
 		anchor: ["top", "left", "right"],

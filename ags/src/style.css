@@ -1,0 +1,56 @@
+window.notification-popups box.notifcations {
+  padding: .5em;
+}
+
+.notification_icon {
+  min-width: 68px;
+  min-height: 68px;
+  margin-right: 1em;
+}
+
+.notification_icon image {
+  font-size: 58px;
+  margin: 5px;
+  color: @theme_fg_color;
+}
+
+.notification_icon box {
+  min-width: 68px;
+  min-height: 68px;
+  border-radius: 7px;
+}
+
+.notification {
+  min-width: 350px;
+  border-radius: 11px;
+  padding: 1em;
+  margin: .5em;
+  border: 1px solid @wm_borders_edge;
+  background-color: @theme_bg_color;
+}
+
+.notification.critical {
+  border: 1px solid lightcoral;
+}
+
+.notification_title {
+  color: @theme_fg_color;
+  font-size: 1.4em;
+}
+
+.notification_body {
+  color: @theme_unfocused_fg_color;
+}
+
+.notification_actions .notification_action-button {
+  margin: 0 .4em;
+  margin-top: .8em;
+}
+
+.notification_actions .notification_action-button:first-child {
+  margin-left: 0;
+}
+
+.notification_actions .notification_action-button:last-child {
+  margin-right: 0;
+}
