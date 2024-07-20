@@ -3,3 +3,4 @@ mkdir -p ~/.config/ags && stow ags -t ~/.config/ags && ln -s /usr/share/com.gith
 mkdir -p ~/.config/nvim && stow nvim -t ~/.config/nvim
 mkdir -p ~/.config/kitty && stow kitty -t ~/.config/kitty
 mkdir -p ~/.config/hypr && stow hyprland -t ~/.config/hypr
+mkdir -p ~/.config/waybar && stow waybar -t ~/.config/waybar
