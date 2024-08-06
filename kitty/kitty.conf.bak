@@ -1,4 +1,7 @@
-include ./Tokyo Night.conf
+# BEGIN_KITTY_THEME
+# Neowave
+include ./current-theme.conf
+# END_KITTY_THEME
 
 font_size 12
 
@@ -10,9 +13,3 @@ font_family JetBrainsMono NFM Regular
 bold_font JetBrainsMono NFM Bold
 italic_font JetBrainsMono NFM Italic
 bold_italic_font JetBrainsMono NFM Bold Italic
-
-
-# BEGIN_KITTY_THEME
-# PaperColor Dark
-include current-theme.conf
-# END_KITTY_THEME

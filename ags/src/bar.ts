@@ -107,6 +107,7 @@ function Volume() {
 			self.hook(audio.speaker, () => {
 				self.value = audio.speaker.volume || 0;
 			}),
+		onChange: (v) => (audio.speaker.volume = v.value),
 	});
 
 	return Widget.Box({

@@ -118,7 +118,7 @@ export class Notification {
 	}
 
 	public render() {
-		notifications.popupTimeout = 2_000;
+		notifications.popupTimeout = 5_000;
 		this.activeList
 			.hook(notifications, this.onNotified.bind(this), "notified")
 			.hook(notifications, this.onDismissed.bind(this), "dismissed");

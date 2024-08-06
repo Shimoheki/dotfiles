@@ -36,6 +36,7 @@ return {
         ["javascriptreact"] = biome_lsp_or_prettier,
         ["typescriptreact"] = biome_lsp_or_prettier,
         ["json"] = { "biome" },
+        ["json5"] = { "biome" },
         ["jsonrc"] = { "biome" },
         ["yaml"] = { "biome" },
         ["html"] = { "biome" },
